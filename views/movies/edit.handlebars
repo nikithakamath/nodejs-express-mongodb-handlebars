@@ -1,0 +1,29 @@
+<div class="main-div">
+      <h1><a href="/movies">All Movies</a></h1>
+      <h1>Edit Movie</h1>
+      <form action= "/movies/update/{{movie._id}}" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td>Title</td>
+              <td><input type="text" name="title" value={{movie.title}} /></td>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td><textarea name="description">{{movie.description}}</textarea></td>
+            </tr>
+            <tr>
+              <td>Director</td>
+              <td><input type="text" name="director" value={{movie.director}} /></td>
+            </tr>
+            <tr>
+              <td>Year</td>
+              <td><input type="text" name="year" value={{movie.year}} /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit">Update</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>

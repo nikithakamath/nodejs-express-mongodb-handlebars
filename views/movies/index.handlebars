@@ -1,0 +1,21 @@
+<div class="main-div">
+  <h1><a href="/movies/add">Add a movie</a></h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each movies}}
+        <tr>
+          <td><a href="/movies/display/{{this._id}}">{{this.title}}</a></td>
+          <td>{{this.year}}</td>
+        </tr>
+      {{else}}
+        <tr><td colspan="2">No movies found.</td></tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
