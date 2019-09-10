@@ -7,6 +7,9 @@ Please follow the instructions to get started with this application
 ### Prerequisites
 * Download and install [Node.js](https://nodejs.org/en/download/)
 * Download and install [MongoDB](https://www.mongodb.com/download-center/community)
+* Handlebars references :
+  - https://handlebarsjs.com/
+  - https://github.com/ericf/express-handlebars
 
 ### Installation
 * Clone this repo : git clone https://github.com/nikithakamath/nodejs-express-mongodb-handlebars.git
